@@ -1,9 +1,8 @@
-import Header from "@/components/Header/Header";
 import ThemeProvider from "@/components/ThemeProvider";
-import { RootLayoutProps } from "@/lib/types";
+import { LayoutProps } from "@/lib/types";
 import "./globals.css";
 
-const RootLayout = ({ children }: RootLayoutProps) => {
+const RootLayout = ({ children }: LayoutProps) => {
   return (
     <html
       lang="en"
@@ -13,9 +12,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           attribute={"class"}
           defaultTheme="dark"
           enableSystem={false}>
-          <Header appName="NST App" />
-
-          <main className="container mx-auto px-6 py-3">{children}</main>
+          {children}
         </ThemeProvider>
       </body>
     </html>

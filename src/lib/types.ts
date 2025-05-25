@@ -1,9 +1,5 @@
 import { ReactNode } from "react";
 
-export type RootLayoutProps = Readonly<{
+export type LayoutProps = Readonly<{
   children: ReactNode;
 }>;
-
-export type HeaderProps = {
-  appName: string;
-};
