@@ -1,8 +1,7 @@
-import { HeaderProps } from "@/lib/types";
 import Link from "next/link";
 import ThemeToggleButton from "../ui/ThemeToggleButton";
 
-const Header = ({ appName }: HeaderProps) => {
+const Header = () => {
   return (
     <header
       className="border-b shadow"
@@ -12,12 +11,12 @@ const Header = ({ appName }: HeaderProps) => {
           <h1
             className="text-2xl font-semibold"
             aria-label="App Name">
-            {appName}
+            ConnectEd
           </h1>
         </Link>
 
         <nav className="flex items-center gap-4">
-          <Link href={"/"}>Home</Link>
+          <Link href={"/"}>Feed</Link>
 
           <ThemeToggleButton />
         </nav>
