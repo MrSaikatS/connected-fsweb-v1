@@ -6,8 +6,9 @@ const RootLayout = ({ children }: LayoutProps) => {
   return (
     <html
       lang="en"
+      className="scroll-smooth"
       suppressHydrationWarning>
-      <body className="">
+      <body>
         <ThemeProvider
           attribute={"class"}
           defaultTheme="dark"
