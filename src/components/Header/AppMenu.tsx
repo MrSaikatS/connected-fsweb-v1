@@ -14,7 +14,7 @@ const MobileMenu = dynamic(() => import("./MobileMenu"), {
 const AppMenu = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
-  return <>{isDesktop ? <DesktopMenu /> : <MobileMenu />}</>;
+  return isDesktop ? <DesktopMenu /> : <MobileMenu />;
 };
 
 export default AppMenu;
