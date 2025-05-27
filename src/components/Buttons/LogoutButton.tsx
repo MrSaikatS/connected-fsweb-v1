@@ -3,11 +3,9 @@ import { Button } from "../ui/button";
 
 const LogoutButton = () => {
   return (
-    <>
-      <Button variant={"destructive"}>
-        <LogOut /> <span className="hidden md:flex">LogOut</span>
-      </Button>
-    </>
+    <Button variant={"destructive"}>
+      <LogOut /> <span className="hidden md:flex">LogOut</span>
+    </Button>
   );
 };
 
