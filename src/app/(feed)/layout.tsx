@@ -1,10 +1,10 @@
-import Header from "@/components/Header/Header";
+import AppHeader from "@/components/Header/AppHeader";
 import { LayoutProps } from "@/lib/types";
 
 const FeedLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <Header />
+      <AppHeader />
 
       <main className="mx-auto max-w-7xl px-6 py-3">{children}</main>
     </>
