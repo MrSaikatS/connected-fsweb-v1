@@ -10,7 +10,7 @@
     "prod": "rimraf .next && next lint && next build && next start"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-slot": "1.2.3",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "lucide-react": "0.511.0",
@@ -20,7 +20,7 @@
     "react-dom": "19.1.0",
     "sharp": "0.34.2",
     "tailwind-merge": "3.3.0",
-    "usehooks-ts": "^3.1.1"
+    "usehooks-ts": "3.1.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3",
@@ -30,6 +30,7 @@
     "@types/react-dom": "19",
     "eslint": "9",
     "eslint-config-next": "15.3.2",
+    "eslint-plugin-react-hooks": "5.2.0",
     "prettier": "3.5.3",
     "prettier-plugin-tailwindcss": "0.6.11",
     "rimraf": "6.0.1",
