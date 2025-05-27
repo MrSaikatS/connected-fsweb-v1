@@ -6,7 +6,11 @@ const FeedLayout = ({ children }: LayoutProps) => {
     <>
       <AppHeader />
 
-      <main className="mx-auto max-w-7xl px-6 py-3">{children}</main>
+      <div className="mx-auto max-w-7xl px-6 py-16 md:grid md:grid-cols-4">
+        <main className="md:col-span-3">{children}</main>
+
+        <aside className="hidden md:col-span-1 md:block">SideBar</aside>
+      </div>
     </>
   );
 };
