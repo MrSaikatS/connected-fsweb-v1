@@ -1,10 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import DesktopMenu from "./DesktopMenu";
-import MobileMenu from "./MobileMenu";
+import { ReactNode, useEffect, useState } from "react";
+import { ScrollArea } from "../ui/scroll-area";
 
-const AppMenu = () => {
+type FeedSidebarContainerProps = {
+  children: ReactNode;
+};
+
+const FeedSidebarContainer = ({ children }: FeedSidebarContainerProps) => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -31,7 +34,7 @@ const AppMenu = () => {
     return null;
   }
 
-  return isDesktop ? <DesktopMenu /> : <MobileMenu />;
+  return isDesktop ? <ScrollArea>{children}</ScrollArea> : <></>;
 };
 
-export default AppMenu;
+export default FeedSidebarContainer;
