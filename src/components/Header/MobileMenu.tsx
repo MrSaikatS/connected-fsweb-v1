@@ -19,7 +19,7 @@ const MobileMenu = () => {
       </Link>
 
       <Link
-        href={"/"}
+        href={"/profile"}
         className="grid place-items-center">
         <UserRound />
         <span className="text-xs">Profile</span>

@@ -1,8 +1,7 @@
 import AppHeader from "@/components/Header/AppHeader";
-import FeedSidebar from "@/components/Sidebars/FeedSidebar";
 import { LayoutProps } from "@/lib/types";
 
-const FeedLayout = ({ children }: LayoutProps) => {
+const ProfileLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <AppHeader />
@@ -10,10 +9,10 @@ const FeedLayout = ({ children }: LayoutProps) => {
       <div className="mx-auto max-w-7xl px-6 py-16 md:grid md:grid-cols-4">
         <main className="md:col-span-3">{children}</main>
 
-        <FeedSidebar />
+        <aside className="hidden md:col-span-1 md:block">SideBar</aside>
       </div>
     </>
   );
 };
 
-export default FeedLayout;
+export default ProfileLayout;

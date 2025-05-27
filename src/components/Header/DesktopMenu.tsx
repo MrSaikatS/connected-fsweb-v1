@@ -19,7 +19,7 @@ const DesktopMenu = () => {
       </Link>
 
       <Link
-        href={"/"}
+        href={"/profile"}
         className="flex gap-2">
         <UserRound />
         <span className="">Profile</span>

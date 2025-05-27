@@ -1,16 +1,9 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Feed | ConnectEd",
-  description: "Feed page of ConnectEd",
-};
-
 const page = () => {
   return (
     <section className="grid place-items-center">
       <div className="bg-gradient-to-tr from-rose-600 to-violet-600 bg-clip-text p-2">
         <div className="text-center text-5xl font-bold text-transparent">
-          A Full Stack Social Media Web Application
+          Profile
         </div>
         <div className="text-center text-5xl font-bold text-transparent">
           (Version 1)
